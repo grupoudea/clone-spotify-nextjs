@@ -93,7 +93,6 @@ footer {
     display: flex;
     gap: 24px; 
     justify-content: space-around;
-    overflow-x: auto;
 }
 
 .card {

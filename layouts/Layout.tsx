@@ -5,16 +5,19 @@ import { Navbar } from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 import React from 'react'
 
-const Layout = ({children}) => {
+interface LayoutProps {
+  children: JSX.Element;
+}
+
+const Layout = ({children}: LayoutProps) => {
   return (
     <div className='contenedor-principal'>
-        <Sidebar/>
+        <Sidebar/> {/*TODO: hacer algo */}
         <main>
             <Navbar/>
             {children}
             <Footer/>
         </main>
-
     </div>
   )
 }
