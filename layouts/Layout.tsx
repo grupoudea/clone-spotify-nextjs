@@ -12,7 +12,7 @@ interface LayoutProps {
 const Layout = ({children}: LayoutProps) => {
   return (
     <div className='contenedor-principal'>
-        <Sidebar/> {/*TODO: hacer algo */}
+        <Sidebar/>
         <main>
             <Navbar/>
             {children}
